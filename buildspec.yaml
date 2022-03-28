@@ -5,7 +5,7 @@ env:
         CACHE_CONTROL: "86400"
         S3_BUCKET: "{{s3_bucket_url}}"
         BUILD_FOLDER: "dist"
-        SONAR_TOKEN: "6e5e99adcf09530147b43d586f74aa2f7e0ecfb8"
+        SONAR_TOKEN: "525eb1be32f4451c3bc04ef9a0c0f27610f48c79"
 phases:
   install:
     runtime-versions:
@@ -15,7 +15,7 @@ phases:
         - npm install
         - npm install -g @angular/cli
         - npm install -g sonarqube-scanner
-        - sonar-scanner -Dsonar.host.url=https://sonarcloud.io
+        - sonar-scanner -Dsonar.host.url=https://sonarcloud.io -Dsonar.sources=. -Dsonar.organization=alainhenryt -Dsonar.projectKey=weblab-cicd-angulartestapp
   build:
     commands:
         - echo Build started 
