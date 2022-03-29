@@ -9,6 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
+    "sonar": "sonar-scanner",
+    "gulp": "gulp",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "build:prod": "ng build --prod",

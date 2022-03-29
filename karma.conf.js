@@ -19,9 +19,9 @@ module.exports = function (config) {
       dir: require('path').join(__dirname, './coverage/weblab-cicd-angulartestapp'), reports: [ 'html', 'lcovonly' ],
       fixWebpackSourcePaths: true
     },
-    angularCli: {
+/*     angularCli: {
       environment: 'dev'
-    },
+    }, */
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
