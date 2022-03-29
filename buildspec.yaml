@@ -19,11 +19,13 @@ phases:
   build:
     commands:
         - echo Build started 
+        - npm run server
+        - npm start
         - echo "$(dist)"
         - ng build --configuration production
 artifacts:
     files:
         - '**/*'
     type: zip
-    base-directory: '/dist*'
+    base-directory: 'src/*'
     discard-paths: yes
