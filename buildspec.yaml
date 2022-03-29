@@ -19,8 +19,7 @@ phases:
   build:
     commands:
         - echo Build started 
-        - npm run server
-        - npm start
+        - ng build --prod
 artifacts:
     files:
         - '**/*'
