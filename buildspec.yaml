@@ -19,11 +19,11 @@ phases:
   build:
     commands:
         - echo Build started 
-        - echo $dist
+        - echo "$(dist)"
         - ng build --configuration production
 artifacts:
     files:
         - '**/*'
     type: zip
-    base-directory: 'dist*'
+    base-directory: '/dist*'
     discard-paths: yes
