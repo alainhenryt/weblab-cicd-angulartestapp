@@ -20,9 +20,10 @@ phases:
     commands:
         - echo Build started 
         - echo "$(/codebuild/*)"
-        - ng build --configuration production
+        - ng build
+        - echo "$(dist/*)"
 artifacts:
     files:
         - '**/*'
-    base-directory: '/codebuild/*'
+    base-directory: 'dist/'
     discard-paths: yes
