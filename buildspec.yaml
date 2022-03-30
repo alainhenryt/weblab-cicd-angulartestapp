@@ -19,13 +19,10 @@ phases:
   build:
     commands:
         - echo Build started 
-        - npm run server
-        - npm start
         - echo "$(dist)"
         - ng build --configuration production
 artifacts:
     files:
         - '**/*'
-    type: zip
-    base-directory: 'src/*'
+    base-directory: 'dist/weblab-cicd-angulartestapp'
     discard-paths: yes
